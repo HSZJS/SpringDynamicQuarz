@@ -18,8 +18,7 @@ public class QuarzController {
 	
 	@Autowired
 	private ScheduleJobManager scheduleJobManager;
-	//private static final String SUC = "success";
-
+	
 	@RequestMapping(value = "/initializationScheduler.xml")
 	public void initializationScheduler() {
 		List<ScheduleJob> jobList = DataWorkContext.getAllJob();
